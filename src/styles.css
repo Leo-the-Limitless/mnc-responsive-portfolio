@@ -12,13 +12,13 @@ body {
 
 .home-section h2 {
   font-size: 90px;
-  opacity: 60%;
+  opacity: 70%;
   line-height: 1.5;
 }
 
 .home-section h5 {
   font-size: 16px;
-  opacity: 50%;
+  opacity: 65%;
 }
 
 .homepage-nav-links {
@@ -34,7 +34,7 @@ body {
   text-decoration: none;
   color: white;
   font-size: 14px;
-  opacity: 45%;
+  opacity: 55%;
   transition: all .25s ease-in-out;
 }
 
@@ -61,4 +61,62 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+@media (max-width: 768px) {
+  .home-section h2 {
+    font-size: 75px;
+  }
+
+  .home-section h5 {
+    font-size: 15px;
+  }
+
+  .home-section a {
+    font-size: 13px;
+    margin-right: 6px;
+    padding: 12px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-section h2 {
+    font-size: 54px;
+  }
+
+  .home-section h5 {
+    font-size: 13px;
+  }
+
+  .home-section a {
+    font-size: 12px;
+    margin-right: 3px;
+    padding: 11px 13px;
+  }
+
+  #top-left,
+  #bot-right {
+    width: 110px;
+  }
+}
+
+@media (max-width: 320px) {
+  .home-section h2 {
+    font-size: 45px;
+  }
+
+  .home-section h5 {
+    font-size: 12px;
+  }
+
+  .home-section a {
+    font-size: 11px;
+    margin-right: 3px;
+    padding: 9px;
+  }
+
+  .info-section {
+    border-left: 3px var(--primary-color) solid;
+    padding-left: 9px;
+  }
 }
