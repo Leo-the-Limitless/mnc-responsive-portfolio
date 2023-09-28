@@ -1,0 +1,64 @@
+:root {
+  --primary-color: #EB615B;
+}
+
+body {
+  background-color: #1D1D20;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+
+.home-section h2 {
+  font-size: 90px;
+  opacity: 60%;
+  line-height: 1.5;
+}
+
+.home-section h5 {
+  font-size: 16px;
+  opacity: 50%;
+}
+
+.homepage-nav-links {
+  margin-top: 50px;
+}
+
+.home-section a {
+  margin-right: 10px;
+  border: 3px transparent solid;
+  border-left: 3px var(--primary-color) solid;
+  border-right: 3px transparent solid;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  opacity: 45%;
+  transition: all .25s ease-in-out;
+}
+
+.home-section a:hover {
+  border: 3px var(--primary-color) solid;
+  opacity: 75%;
+}
+
+.info-section {
+  border-left: 5px var(--primary-color) solid;
+  padding-left: 15px;
+}
+
+#top-left {
+  width: 130px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#bot-right {
+  width: 130px;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
