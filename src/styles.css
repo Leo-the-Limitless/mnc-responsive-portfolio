@@ -6,9 +6,17 @@ body {
   background-color: #1D1D20;
   font-family: 'Montserrat', sans-serif;
   color: white;
+  overflow: hidden;
 }
 
-/* font-family: 'Montserrat', sans-serif; */
+footer {
+  position: relative;
+  bottom: 27px;
+  font-size: 12px;
+  opacity: 45%;
+  display: block;
+  text-align: center;
+}
 
 .home-section h2 {
   font-size: 90px;
@@ -34,7 +42,7 @@ body {
   text-decoration: none;
   color: white;
   font-size: 14px;
-  opacity: 55%;
+  opacity: 60%;
   transition: all .25s ease-in-out;
 }
 
@@ -80,6 +88,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  footer {
+    font-size: 11px;
+  }
+
   .home-section h2 {
     font-size: 54px;
   }
@@ -101,6 +113,10 @@ body {
 }
 
 @media (max-width: 320px) {
+  footer {
+    font-size: 9px;
+  }
+
   .home-section h2 {
     font-size: 45px;
   }
@@ -118,5 +134,10 @@ body {
   .info-section {
     border-left: 3px var(--primary-color) solid;
     padding-left: 9px;
+  }
+
+  #top-left,
+  #bot-right {
+    width: 90px;
   }
 }
