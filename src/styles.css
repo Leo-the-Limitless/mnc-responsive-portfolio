@@ -3,19 +3,27 @@
 }
 
 body {
-  background-color: #1D1D20;
+  /* background-color: #1D1D20; */
   font-family: 'Montserrat', sans-serif;
   color: white;
   overflow: hidden;
 }
 
 footer {
-  position: relative;
-  bottom: 27px;
+  position: absolute;
+  bottom: 9px;
   font-size: 12px;
   opacity: 45%;
   display: block;
   text-align: center;
+}
+
+.home-section {
+  background-image: url("../images/Dusty-Particles.png");
+  background-size: 100vw;
+  background-attachment: fixed;
+  background-color: black;
+  background-repeat: no-repeat;
 }
 
 .home-section h2 {
@@ -71,19 +79,34 @@ footer {
   right: 0;
 }
 
+#profile-image {
+  width: 180px;
+  border-radius: 50%;
+  opacity: 75%;
+}
+
+#name {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   .home-section h2 {
-    font-size: 75px;
+    font-size: 60px;
   }
 
   .home-section h5 {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .home-section a {
     font-size: 13px;
     margin-right: 6px;
     padding: 12px 14px;
+  }
+
+  #profile-image {
+    width: 126px;
   }
 }
 
@@ -93,22 +116,36 @@ footer {
   }
 
   .home-section h2 {
-    font-size: 54px;
+    font-size: 33px;
   }
 
   .home-section h5 {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .home-section a {
-    font-size: 12px;
-    margin-right: 3px;
-    padding: 11px 13px;
+    border-left: 2px var(--primary-color) solid;
+    font-size: 9px;
+    margin-right: 2px;
+    padding: 9px;
+  }
+
+  .home-section a:hover {
+    border-left: 2px var(--primary-color) solid;
+  }
+
+  .info-section {
+    border-left: 3px var(--primary-color) solid;
+    padding-left: 7px;
   }
 
   #top-left,
   #bot-right {
-    width: 110px;
+    width: 100px;
+  }
+
+  #profile-image {
+    width: 81px;
   }
 }
 
@@ -118,26 +155,24 @@ footer {
   }
 
   .home-section h2 {
-    font-size: 45px;
+    font-size: 27px;
   }
 
   .home-section h5 {
-    font-size: 12px;
+    font-size: 9px;
   }
 
   .home-section a {
-    font-size: 11px;
-    margin-right: 3px;
-    padding: 9px;
-  }
-
-  .info-section {
-    border-left: 3px var(--primary-color) solid;
-    padding-left: 9px;
+    font-size: 8px;
+    padding: 7px;
   }
 
   #top-left,
   #bot-right {
     width: 90px;
+  }
+
+  #profile-image {
+    width: 63px;
   }
 }
