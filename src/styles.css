@@ -27,14 +27,14 @@ footer {
 }
 
 .home-section h2 {
-  font-size: 90px;
+  font-size: 72px;
   opacity: 70%;
   line-height: 1.5;
 }
 
 .home-section h5 {
   font-size: 16px;
-  opacity: 65%;
+  opacity: 75%;
 }
 
 .homepage-nav-links {
@@ -50,7 +50,7 @@ footer {
   text-decoration: none;
   color: white;
   font-size: 14px;
-  opacity: 60%;
+  opacity: 70%;
   transition: all .25s ease-in-out;
 }
 
@@ -85,6 +85,8 @@ footer {
   border-radius: 75% 25% 75% 25%;
   opacity: 75%;
   background: #ae303083;
+  position: relative;
+  left: -15px;
 }
 
 #name {
@@ -94,7 +96,7 @@ footer {
 
 @media (max-width: 768px) {
   .home-section h2 {
-    font-size: 60px;
+    font-size: 54px;
   }
 
   .home-section h5 {
@@ -108,7 +110,12 @@ footer {
   }
 
   #profile-image {
-    width: 126px;
+    width: 135px;
+  }
+
+  #top-left,
+  #bot-right {
+    width: 100px;
   }
 }
 
@@ -118,7 +125,7 @@ footer {
   }
 
   .home-section h2 {
-    font-size: 33px;
+    font-size: 36px;
   }
 
   .home-section h5 {
@@ -129,7 +136,7 @@ footer {
     border-left: 2px var(--primary-color) solid;
     font-size: 9px;
     margin-right: 2px;
-    padding: 9px;
+    padding: 8px;
   }
 
   .home-section a:hover {
@@ -147,7 +154,7 @@ footer {
   }
 
   #profile-image {
-    width: 70px;
+    width: 90px;
   }
 }
 
@@ -170,6 +177,7 @@ footer {
   }
 
   #profile-image {
-    width: 54px;
+    width: 72px;
+    left: -23px;
   }
 }
