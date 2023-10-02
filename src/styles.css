@@ -59,24 +59,72 @@ footer {
   opacity: 75%;
 }
 
-.info-section {
-  border-left: 5px var(--primary-color) solid;
-  padding-left: 15px;
+.about-section {
+  background: black;
+  overflow: auto;
+}
+
+.about-section h2 {
+  line-height: 2;
+  margin: 25px 0 10px 0;
+  opacity: 85%;
+}
+
+.journey-box {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.journey-section ul {
+  list-style: none;
+}
+
+.journey-section li {
+  margin-bottom: 9px;
+  font-size: 20px;
+  opacity: 80%;
+  padding: 20px 10px;
+}
+
+.journey-section p {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.info-para {
+  padding: 9px;
+  margin-left: 20px;
+  border-left: 3px solid var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  border-bottom-left-radius: 10px;
+}
+
+#top-left-abt,
+#bot-right-abt {
+  width: 90px;
+}
+
+#bot-right-abt {
+  float: right;
 }
 
 #top-left {
   width: 130px;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -10px;
+  top: -10px;
 }
 
 #bot-right {
   width: 130px;
-  transform: rotate(180deg);
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -10px;
+  right: -10px;
+}
+
+#top-left,
+#bot-right {
+  opacity: 90%;
 }
 
 #profile-image {
@@ -92,6 +140,12 @@ footer {
 #name {
   color: var(--primary-color);
   font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .journey-box {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -179,5 +233,10 @@ footer {
   #profile-image {
     width: 72px;
     left: -23px;
+  }
+
+  #top-left,
+  #bot-right {
+    width: 70px;
   }
 }
