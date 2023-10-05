@@ -243,11 +243,11 @@ footer {
 
   .info-section {
     border-left: 3px var(--primary-color) solid;
-    padding-left: 5px;
+    padding-left: 6px;
   }
 
   .about-section h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .journey-intro {
@@ -259,16 +259,16 @@ footer {
   }
 
   .journey-intro p {
-    font-size: 12px;
+    font-size: 11px;
     padding-left: 9px;
   }
 
   .journey-section li {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .info-para p {
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .info-para {
@@ -305,20 +305,24 @@ footer {
   }
 
   .about-section h2 {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .journey-intro p {
-    font-size: 10px;
+    font-size: 9px;
     padding-left: 5px;
   }
 
   .journey-section li {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .info-para p {
-    font-size: 9px;
+    font-size: 8px;
+  }
+
+  .info-para {
+    padding: 0;
   }
 
   #profile-image {
