@@ -61,7 +61,7 @@ footer {
 
 .about-section {
   background: black;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 .about-section h2 {
@@ -113,6 +113,63 @@ footer {
   opacity: 90%;
 }
 
+.hobbies-section {
+  margin-left: 30px;
+  overflow-x: hidden;
+}
+
+.hobbies-section p {
+  font-size: 11px;
+}
+
+.hobbies-section h6 {
+  font-size: 14px;
+}
+
+.hobbies-section p {
+  padding-right: 15px;
+  line-height: 1.8;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.hobbies-first-col {
+  border-right: 1px solid var(--primary-color);
+}
+
+.journey-section a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.journey-section a:hover {
+  text-decoration: underline;
+}
+
+.journey-btns {
+  margin-top: 10px;
+  margin-left: 140px;
+}
+
+.journey-btn {
+  font-size: 13px;
+  font-weight: bold;
+  opacity: 90%;
+  padding: 13px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: all .25s ease-in-out;
+}
+
+.journey-btn:hover {
+  color: black;
+  background-color: var(--primary-color);
+  opacity: 95%;
+}
+
 #top-left-abt,
 #bot-right-abt {
   width: 90px;
@@ -156,9 +213,39 @@ footer {
   font-weight: bold;
 }
 
-@media (max-width: 990px) {
+#hobbies-img {
+  padding: 3px;
+  border: 1px solid white;
+  opacity: 80%;
+  width: 95%;
+  border-radius: 5px;
+}
+
+@media (max-width: 991px) {
   .journey-box {
     max-width: 100%;
+  }
+
+  .hobbies-section {
+    margin-left: 10px;
+    padding: 0 15px 0 25px;
+  }
+
+  .hobbies-section p {
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+
+  .journey-btns {
+    margin-left: 40px;
+  }
+
+  .hobbies-first-col {
+    border-left: 1px solid var(--primary-color);
+  }
+
+  #hobbies-img {
+    display: none;
   }
 }
 
@@ -189,6 +276,10 @@ footer {
     padding-left: 10px;
   }
 
+  .journey-btns {
+    margin-left: 20px;
+  }
+
   .journey-intro p {
     font-size: 13px;
   }
@@ -205,6 +296,11 @@ footer {
   .info-para {
     padding: 4px;
     margin-left: 18px;
+  }
+
+  .journey-btn {
+    font-size: 12px;
+    padding: 12px;
   }
 
   #profile-image {
@@ -276,6 +372,32 @@ footer {
     margin-left: 12px;
   }
 
+  .journey-btns {
+    margin-left: 9px;
+  }
+
+  .journey-btn {
+    font-size: 11px;
+    padding: 11px;
+  }
+
+  .hobbies-section {
+    margin-left: 4px;
+  }
+
+  .hobbies-section p {
+    font-size: 9px;
+  }
+
+  .hobbies-section h6 {
+    font-size: 12px;
+  }
+
+  .hobbies-first-col {
+    border-left: none;
+    padding: 0;
+  }
+
   #top-left,
   #bot-right {
     width: 90px;
@@ -323,6 +445,23 @@ footer {
 
   .info-para {
     padding: 0;
+  }
+
+  .journey-btns {
+    margin-left: 5px;
+  }
+
+  .journey-btn {
+    font-size: 9px;
+    padding: 9px;
+  }
+
+  .hobbies-section p {
+    font-size: 8px;
+  }
+
+  .hobbies-section h6 {
+    font-size: 11px;
   }
 
   #profile-image {
