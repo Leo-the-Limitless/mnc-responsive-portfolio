@@ -9,9 +9,17 @@ body {
   overflow: hidden;
 }
 
-footer {
+.home-section footer {
   position: absolute;
   bottom: 9px;
+  font-size: 12px;
+  opacity: 45%;
+  display: block;
+  text-align: center;
+}
+
+.about-section footer {
+  padding: 9px 0;
   font-size: 12px;
   opacity: 45%;
   display: block;
@@ -124,6 +132,7 @@ footer {
 
 .hobbies-section h6 {
   font-size: 14px;
+  opacity: 90%;
 }
 
 .hobbies-section p {
@@ -131,6 +140,7 @@ footer {
   line-height: 1.8;
   font-size: 13px;
   margin-bottom: 18px;
+  opacity: 75%;
 }
 
 .hobbies-first-col {
@@ -168,6 +178,10 @@ footer {
   color: black;
   background-color: var(--primary-color);
   opacity: 95%;
+}
+
+#hobbies-title {
+  opacity: 80%;
 }
 
 #top-left-abt,
@@ -318,6 +332,11 @@ footer {
     font-size: 11px;
   }
 
+  .about-section footer {
+    padding: 7px 0;
+    font-size: 9px;
+  }
+
   .home-section h2 {
     font-size: 36px;
   }
@@ -411,6 +430,11 @@ footer {
 @media (max-width: 320px) {
   footer {
     font-size: 9px;
+  }
+
+  .about-section footer {
+    padding: 5px 0;
+    font-size: 7px;
   }
 
   .home-section h2 {
