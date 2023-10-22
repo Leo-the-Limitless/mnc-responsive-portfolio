@@ -22,7 +22,8 @@ body {
   text-align: center;
 }
 
-.about-section footer {
+.about-section footer,
+.projects-section footer {
   padding: 9px 0;
   font-size: 12px;
   opacity: 45%;
@@ -440,7 +441,8 @@ body {
     font-size: 11px;
   }
 
-  .about-section footer {
+  .about-section footer,
+  .projects-section footer {
     padding: 7px 0;
     font-size: 9px;
   }
@@ -569,7 +571,8 @@ body {
     font-size: 9px;
   }
 
-  .about-section footer {
+  .about-section footer,
+  .projects-section footer {
     padding: 5px 0;
     font-size: 7px;
   }
