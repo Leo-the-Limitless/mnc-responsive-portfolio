@@ -135,7 +135,7 @@ body {
 }
 
 .hobbies-section h6 {
-  font-size: 14px;
+  font-size: 15px;
   opacity: 90%;
 }
 
@@ -197,6 +197,7 @@ body {
 .projects-rows a {
   color: var(--primary-color);
   text-decoration: none;
+  width: 50%;
 }
 
 .projects-rows h6 a:hover {
@@ -218,21 +219,30 @@ body {
   font-size: 13px;
   padding-left: 10px;
   border-left: 1px solid var(--primary-color);
+  opacity: 85%;
 }
 
 .project-image {
   opacity: 90%;
   padding: 5px;
+  display: block;
+  margin: 0 auto;
 }
 
-.project-card h5 {
-  font-size: 22px;
-  opacity: 90%;
+.projects-rows h5 {
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 85%;
+  line-height: 1.5;
+  position: relative;
+  top: -40px;
+  text-align: center;
 }
 
 .project-card h6 {
   opacity: 90%;
-  font-size: 15px;
+  font-size: 14px;
+  margin-top: 15px;
 }
 
 #hobbies-title {
@@ -313,12 +323,43 @@ body {
     border-left: 1px solid var(--primary-color);
   }
 
+  .projects-rows h5 {
+    font-size: 14px;
+    top: -30px;
+  }
+
+  .projects-rows .journey-btn {
+    font-size: 10px;
+    padding: 9px;
+  }
+
+  .project-card h6 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .projects-section p {
+    font-size: 11px;
+  }
+
+  .projects-rows {
+    max-width: 90%;
+  }
+
+  .each-project {
+    margin: 0 auto;
+  }
+
+  .projects-section h2 {
+    font-size: 27px;
+  }
+
   #hobbies-img {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .home-section h2 {
     font-size: 54px;
   }
@@ -370,6 +411,18 @@ body {
   .journey-btn {
     font-size: 12px;
     padding: 12px;
+  }
+
+  .projects-section h2 {
+    font-size: 22px;
+  }
+
+  .projects-rows {
+    max-width: 80%;
+  }
+
+  .project-card {
+    padding-left: 0 !important;
   }
 
   #profile-image {
@@ -472,6 +525,35 @@ body {
     padding: 0;
   }
 
+  .projects-section h2 {
+    font-size: 16px;
+  }
+
+  .projects-rows h5 {
+    font-size: 12px;
+  }
+
+  .projects-rows .journey-btn {
+    font-size: 9px;
+  }
+
+  .project-card h6 {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+
+  .projects-section p {
+    font-size: 9px;
+  }
+
+  .projects-rows {
+    max-width: 90%;
+  }
+
+  .project-image {
+    padding: 4px;
+  }
+
   #top-left,
   #bot-right {
     width: 90px;
@@ -541,6 +623,32 @@ body {
 
   .hobbies-section h6 {
     font-size: 11px;
+  }
+
+  .projects-section h2 {
+    font-size: 13px;
+    padding-top: 40px !important;
+  }
+
+  .each-project {
+    margin-top: 30px !important;
+  }
+
+  .projects-rows h5 {
+    font-size: 10px;
+  }
+
+  .projects-rows .journey-btn {
+    font-size: 8px;
+  }
+
+  .project-card h6 {
+    font-size: 8px;
+  }
+
+  .projects-section p {
+    font-size: 7px;
+    margin: 5px 0 10px !important;
   }
 
   #profile-image {
