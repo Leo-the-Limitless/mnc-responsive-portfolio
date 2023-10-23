@@ -220,7 +220,6 @@ body {
   font-size: 13px;
   padding-left: 10px;
   border-left: 1px solid var(--primary-color);
-  opacity: 85%;
 }
 
 .project-image {
@@ -241,8 +240,46 @@ body {
 }
 
 .project-card h6 {
-  opacity: 90%;
   font-size: 14px;
+  margin-top: 15px;
+}
+
+.contact-section {
+  background: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 36px;
+  opacity: 90%;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-details {
+  padding: 30px 90px;
+  border: 1px solid var(--primary-color);
+  border-radius: 9px;
+  margin-bottom: 25px;
+  opacity: 90%;
+}
+
+.contact-details a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.contact-details h6 {
   margin-top: 15px;
 }
 
@@ -426,6 +463,18 @@ body {
     padding-left: 0 !important;
   }
 
+  .contact-details {
+    padding: 20px 60px;
+  }
+
+  .contact-details h5 {
+    font-size: 18px;
+  }
+
+  .contact-details h6 {
+    font-size: 14px;
+  }
+
   #profile-image {
     width: 135px;
   }
@@ -556,6 +605,22 @@ body {
     padding: 4px;
   }
 
+  .contact-section h2 {
+    margin-bottom: 27px;
+  }
+
+  .contact-details {
+    padding: 18px 45px;
+  }
+
+  .contact-details h5 {
+    font-size: 16px;
+  }
+
+  .contact-details h6 {
+    font-size: 12px;
+  }
+
   #top-left,
   #bot-right {
     width: 90px;
@@ -652,6 +717,22 @@ body {
   .projects-section p {
     font-size: 7px;
     margin: 5px 0 10px !important;
+  }
+
+  .contact-section h2 {
+    margin-bottom: 20px;
+  }
+
+  .contact-details {
+    padding: 18px 36px;
+  }
+
+  .contact-details h5 {
+    font-size: 15px;
+  }
+
+  .contact-details h6 {
+    font-size: 11px;
   }
 
   #profile-image {
