@@ -283,6 +283,17 @@ body {
   margin-top: 15px;
 }
 
+.contact-section footer {
+  position: absolute;
+  bottom: 9px;
+  left: 0;
+  right: 0;
+  opacity: 70%;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+}
+
 #hobbies-title {
   opacity: 80%;
 }
@@ -475,6 +486,10 @@ body {
     font-size: 14px;
   }
 
+  .contact-section footer {
+    font-size: 11px;
+  }
+
   #profile-image {
     width: 135px;
   }
@@ -621,6 +636,10 @@ body {
     font-size: 12px;
   }
 
+  .contact-section footer {
+    font-size: 10px;
+  }
+
   #top-left,
   #bot-right {
     width: 90px;
@@ -733,6 +752,10 @@ body {
 
   .contact-details h6 {
     font-size: 11px;
+  }
+
+  .contact-section footer {
+    font-size: 9px;
   }
 
   #profile-image {
