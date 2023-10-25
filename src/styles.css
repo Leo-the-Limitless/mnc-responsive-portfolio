@@ -25,7 +25,7 @@ nav ul {
   width: 100vw;
   justify-content: center;
   position: relative;
-  left: -15px;
+  left: -22px;
 }
 
 nav li {
@@ -34,8 +34,8 @@ nav li {
 
 nav a {
   border: 0 !important;
-  margin: 30px !important;
-  padding: 30px !important;
+  margin: 27px !important;
+  padding: 27px !important;
   opacity: 45% !important;
   color: white;
   text-decoration: none;
@@ -460,7 +460,17 @@ nav a:hover {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  nav a {
+    margin: 12px !important;
+    padding: 12px !important;
+    font-size: 12px !important;
+  }
+
+  nav ul {
+    left: -27px;
+  }
+
   .home-section h2 {
     font-size: 54px;
   }
@@ -555,6 +565,16 @@ nav a:hover {
 @media (max-width: 480px) {
   footer {
     font-size: 11px;
+  }
+
+  nav a {
+    margin: 9px !important;
+    padding: 9px !important;
+    font-size: 10px !important;
+  }
+
+  nav ul {
+    left: -18px;
   }
 
   .about-section footer,
@@ -705,6 +725,12 @@ nav a:hover {
 @media (max-width: 320px) {
   footer {
     font-size: 9px;
+  }
+
+  nav a {
+    margin: 7px !important;
+    padding: 7px !important;
+    font-size: 9px !important;
   }
 
   .about-section footer,
