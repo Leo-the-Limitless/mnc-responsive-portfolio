@@ -11,6 +11,7 @@ body {
 nav {
   position: fixed;
   padding-top: 18px;
+  overflow: hidden;
   box-shadow: 0px 5px 10px #0a0a0a;
 }
 
@@ -36,7 +37,7 @@ nav a {
   border: 0 !important;
   margin: 27px !important;
   padding: 27px !important;
-  opacity: 45% !important;
+  opacity: 70% !important;
   color: white;
   text-decoration: none;
   font-size: 14px !important;
@@ -45,12 +46,8 @@ nav a {
 nav .active {
   font-weight: bold;
   border-radius: 10px;
-  opacity: 65% !important;
+  opacity: 100% !important;
   color: var(--primary-color) !important;
-}
-
-nav .active:hover {
-  opacity: 65% !important;
 }
 
 nav a:hover {
@@ -568,9 +565,9 @@ nav a:hover {
   }
 
   nav a {
-    margin: 9px !important;
-    padding: 9px !important;
-    font-size: 10px !important;
+    margin: 6px !important;
+    padding: 6px !important;
+    font-size: 9px !important;
   }
 
   nav ul {
@@ -728,9 +725,9 @@ nav a:hover {
   }
 
   nav a {
-    margin: 7px !important;
-    padding: 7px !important;
-    font-size: 9px !important;
+    margin: 5px !important;
+    padding: 4px !important;
+    font-size: 8px !important;
   }
 
   .about-section footer,
