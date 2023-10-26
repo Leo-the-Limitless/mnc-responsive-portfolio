@@ -366,8 +366,8 @@ nav a:hover {
 #bot-right {
   width: 130px;
   position: absolute;
-  bottom: -10px;
-  right: -10px;
+  bottom: 0px;
+  right: 0px;
 }
 
 #top-left,
@@ -560,8 +560,8 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
-  footer {
-    font-size: 11px;
+  .home-section footer {
+    font-size: 10px;
   }
 
   nav a {
@@ -720,7 +720,7 @@ nav a:hover {
 }
 
 @media (max-width: 320px) {
-  footer {
+  .home-section footer {
     font-size: 9px;
   }
 
