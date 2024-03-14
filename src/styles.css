@@ -173,29 +173,36 @@ nav a:hover {
 }
 
 .hobbies-section {
-  margin-left: 30px;
+  margin-left: 36px;
   overflow-x: hidden;
+  padding-right: 27px;
 }
 
-.hobbies-section p {
-  font-size: 11px;
-}
-
-.hobbies-section h6 {
+.hobbies-section h6,
+.volunteer-section h6 {
   font-size: 15px;
   opacity: 90%;
 }
 
 .hobbies-section p {
-  padding-right: 15px;
   line-height: 1.8;
   font-size: 13px;
   margin-bottom: 18px;
   opacity: 90%;
 }
 
-.hobbies-first-col {
-  border-right: 1px solid var(--primary-color);
+.volunteer-section {
+  margin: 25px;
+  border: 1px solid var(--primary-color);
+  overflow-x: hidden;
+}
+
+.volunteer-section p {
+  border-left: 1px solid var(--primary-color);
+  padding-left: 9px;
+  line-height: 1.8;
+  font-size: 13px;
+  opacity: 90%;
 }
 
 .journey-section a {
@@ -238,7 +245,7 @@ nav a:hover {
 .projects-rows {
   max-width: 75%;
   margin: 0 auto;
-  opacity: 85%;
+  opacity: 90%;
 }
 
 .projects-rows a {
@@ -407,7 +414,11 @@ nav a:hover {
 
   .hobbies-section {
     margin-left: 10px;
-    padding: 0 15px 0 25px;
+    padding: 0 25px;
+  }
+
+  .hobbies-first-col {
+    border-left: 1px solid var(--primary-color);
   }
 
   .hobbies-section p {
@@ -415,12 +426,12 @@ nav a:hover {
     margin-bottom: 25px;
   }
 
-  .journey-btns {
-    margin-left: 40px;
+  .volunteer-section p {
+    font-size: 12px;
   }
 
-  .hobbies-first-col {
-    border-left: 1px solid var(--primary-color);
+  .journey-btns {
+    margin-left: 40px;
   }
 
   .projects-rows h5 {
@@ -521,6 +532,10 @@ nav a:hover {
   .journey-btn {
     font-size: 12px;
     padding: 12px;
+  }
+
+  .volunteer-section {
+    margin: 12px;
   }
 
   .projects-section h2 {
@@ -649,17 +664,19 @@ nav a:hover {
     margin-left: 4px;
   }
 
-  .hobbies-section p {
+  .hobbies-section p,
+  .volunteer-section p {
     font-size: 9px;
   }
 
-  .hobbies-section h6 {
+  .hobbies-section h6,
+  .volunteer-section h6 {
     font-size: 12px;
   }
 
-  .hobbies-first-col {
+  .volunteer-section p {
     border-left: none;
-    padding: 0;
+    padding-left: 0;
   }
 
   .projects-section h2 {
@@ -781,11 +798,13 @@ nav a:hover {
     padding: 9px;
   }
 
-  .hobbies-section p {
+  .hobbies-section p,
+  .volunteer-section p {
     font-size: 8px;
   }
 
-  .hobbies-section h6 {
+  .hobbies-section h6,
+  .volunteer-section h6 {
     font-size: 11px;
   }
 
