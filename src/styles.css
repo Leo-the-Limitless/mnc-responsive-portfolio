@@ -1,18 +1,29 @@
 :root {
-  --primary-color: #EB615B;
+  --primary-color: #eb615b;
+  --primary-light: #ff7a6e;
+  --dark-bg: #0a0a0a;
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --accent-glow: rgba(235, 97, 91, 0.15);
 }
 
 body {
-  /* background-color: #1D1D20; */
-  font-family: 'Montserrat', sans-serif;
-  color: white;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-primary);
 }
 
 nav {
   position: absolute;
   padding-top: 18px;
   overflow: hidden;
-  box-shadow: 0px 5px 10px #0a0a0a;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 10, 0.95) 0%,
+    rgba(10, 10, 10, 0.8) 100%
+  );
+  box-shadow: 0px 8px 20px rgba(235, 97, 91, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 
 .projects-section nav,
@@ -41,6 +52,12 @@ nav a {
   color: white;
   text-decoration: none;
   font-size: 14px !important;
+  transition: all 0.25s ease !important;
+  position: relative;
+}
+
+nav a:hover {
+  opacity: 100% !important;
 }
 
 nav .active {
@@ -57,6 +74,7 @@ nav a:hover {
 .home-section {
   overflow-x: hidden;
   overflow-y: hidden;
+  position: relative;
 }
 
 .home-section footer {
@@ -66,6 +84,11 @@ nav a:hover {
   opacity: 45%;
   display: block;
   text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.home-section footer:hover {
+  opacity: 65%;
 }
 
 .about-section footer,
@@ -75,74 +98,133 @@ nav a:hover {
   opacity: 45%;
   display: block;
   text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.about-section footer:hover,
+.projects-section footer:hover {
+  opacity: 65%;
 }
 
 .home-section {
   background-image: url("../images/Dusty-Particles.png");
   background-size: 100vw;
   background-attachment: fixed;
-  background-color: black;
+  background-color: var(--dark-bg);
   background-repeat: no-repeat;
 }
 
 .home-section h2 {
   font-size: 72px;
-  opacity: 70%;
+  opacity: 80%;
   line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: -1px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.7)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInDown 1s ease-out;
 }
 
 .home-section h5 {
   font-size: 16px;
   opacity: 75%;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+.info-section {
+  animation: fadeInUp 1.2s ease-out;
 }
 
 .homepage-nav-links {
   margin-top: 50px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  animation: fadeInUp 1.4s ease-out;
 }
 
 .home-section a {
   margin-right: 10px;
-  border: 3px transparent solid;
+  border: 3px solid transparent;
   border-left: 3px var(--primary-color) solid;
-  border-right: 3px transparent solid;
-  padding: 15px 20px;
+  padding: 14px 22px;
   text-decoration: none;
   color: white;
   font-size: 14px;
   opacity: 70%;
-  transition: all .25s ease-in-out;
+  transition: all 0.25s ease;
+  position: relative;
+  border-radius: 4px;
 }
 
 .home-section a:hover {
   border: 3px var(--primary-color) solid;
-  opacity: 75%;
+  opacity: 90%;
+  box-shadow: 0 6px 20px rgba(235, 97, 91, 0.25);
+  transform: translateY(-2px);
 }
 
 .about-section {
-  background: black;
+  background: var(--dark-bg);
   overflow-x: hidden;
+  padding: 0 55px;
 }
 
 .about-section h2 {
   line-height: 2;
   margin: 20px 0 15px 0;
   opacity: 85%;
+  font-weight: 600;
+  font-size: 36px;
+  position: relative;
+  display: inline-block;
+}
+
+.about-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--primary-light),
+    transparent
+  );
+  border-radius: 2px;
 }
 
 .journey-box {
   max-width: 85%;
-  margin: 0 auto;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 .journey-section ul {
   list-style: none;
+  padding: 0;
 }
 
 .journey-section li {
-  margin-bottom: 9px;
-  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
   opacity: 90%;
-  padding: 20px 10px;
+  padding: 16px 0 16px 24px;
+  border-left: 4px solid var(--primary-color);
+  position: relative;
+  color: var(--primary-light);
 }
 
 .journey-section p {
@@ -153,23 +235,31 @@ nav a:hover {
 }
 
 .journey-intro {
-  max-width: 80%;
+  max-width: 85%;
+  margin: 0 auto 30px;
 }
 
 .journey-intro p {
-  border-left: 2px solid var(--primary-color);
+  border-left: 4px solid var(--primary-color);
   font-size: 14px;
   line-height: 1.8;
-  padding-left: 18px;
+  padding: 18px 20px;
+  background: linear-gradient(90deg, var(--accent-glow), transparent);
+  border-radius: 6px;
+  transition: all 0.35s ease;
+  box-shadow: 0 2px 10px rgba(235, 97, 91, 0.1);
 }
 
 .info-para {
-  padding: 6px;
-  margin-left: 20px;
-  border-left: 2px solid var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
-  border-bottom-left-radius: 10px;
+  padding: 14px 16px;
+  margin-left: 40px;
+  margin-bottom: 24px;
+  border-left: 3px solid var(--primary-color);
+  border-radius: 6px;
   opacity: 90%;
+  background: linear-gradient(135deg, var(--accent-glow), transparent);
+  transition: all 0.35s ease;
+  box-shadow: 0 2px 8px rgba(235, 97, 91, 0.1);
 }
 
 .hobbies-section {
@@ -182,6 +272,8 @@ nav a:hover {
 .volunteer-section h6 {
   font-size: 15px;
   opacity: 90%;
+  color: var(--primary-color);
+  font-weight: 600;
 }
 
 .hobbies-section p {
@@ -193,13 +285,23 @@ nav a:hover {
 
 .volunteer-section {
   margin: 25px;
-  border: 1px solid var(--primary-color);
+  border: 2px solid var(--primary-color);
   overflow-x: hidden;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent-glow), transparent);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.volunteer-section:hover {
+  box-shadow: 0 8px 25px rgba(235, 97, 91, 0.2);
+  transform: translateY(-4px);
+  border-color: var(--primary-light);
 }
 
 .volunteer-section p {
-  border-left: 1px solid var(--primary-color);
-  padding-left: 9px;
+  border-left: 2px solid var(--primary-color);
+  padding-left: 12px;
   line-height: 1.8;
   font-size: 13px;
   opacity: 90%;
@@ -209,37 +311,81 @@ nav a:hover {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.journey-section a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--primary-light)
+  );
+  transition: width 0.3s ease;
 }
 
 .journey-section a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--primary-light);
+}
+
+.journey-section a:hover::after {
+  width: 100%;
 }
 
 .journey-btns {
   margin-top: 10px;
   margin-left: 140px;
+  display: flex;
+  gap: 12px;
 }
 
 .journey-btn {
   font-size: 13px;
   font-weight: bold;
   opacity: 90%;
-  padding: 13px;
-  border-radius: 5px;
+  padding: 13px 18px;
+  border-radius: 6px;
   text-decoration: none;
   color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  transition: all .25s ease-in-out;
+  border: 2px solid var(--primary-color);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.journey-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  transition: left 0.35s ease;
+  z-index: -1;
 }
 
 .journey-btn:hover {
   color: black;
-  background-color: var(--primary-color);
-  opacity: 95%;
+  opacity: 100%;
+  box-shadow: 0 6px 20px rgba(235, 97, 91, 0.4);
+  transform: translateY(-3px);
+}
+
+.journey-btn:hover::before {
+  left: 0;
 }
 
 .projects-section {
-  background: black;
+  background: var(--dark-bg);
 }
 
 .projects-rows {
@@ -249,37 +395,65 @@ nav a:hover {
 }
 
 .projects-rows a {
-  color: var(--primary-color);
+  color: white;
   text-decoration: none;
   width: 50%;
+  transition: all 0.3s ease;
 }
 
 .projects-rows h6 a:hover {
   text-decoration: underline;
+  color: white;
 }
 
 .each-project {
   padding-bottom: 30px;
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 2px solid rgba(235, 97, 91, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.each-project:hover {
+  border-bottom-color: var(--primary-color);
+  opacity: 100%;
 }
 
 .projects-section h2 {
   font-size: 36px;
-  text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.76);
-  opacity: 80%;
+  text-shadow: 0 4px 15px rgba(235, 97, 91, 0.15);
+  opacity: 85%;
+  font-weight: 600;
+  letter-spacing: -0.5px;
 }
 
 .projects-section p {
   font-size: 13px;
-  padding-left: 10px;
-  border-left: 1px solid var(--primary-color);
+  padding-left: 12px;
+  border-left: 3px solid var(--primary-color);
+  transition: all 0.3s ease;
+  background: linear-gradient(90deg, var(--accent-glow), transparent);
+  padding: 10px 12px;
+  border-radius: 4px;
+  color: white;
+}
+
+.projects-section p:hover {
+  box-shadow: 0 4px 12px rgba(235, 97, 91, 0.15);
 }
 
 .project-image {
-  opacity: 90%;
+  opacity: 85%;
   padding: 5px;
   display: block;
   margin: 0 auto;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.project-image:hover {
+  opacity: 100%;
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(235, 97, 91, 0.2);
 }
 
 .projects-rows h5 {
@@ -290,15 +464,23 @@ nav a:hover {
   position: relative;
   top: -40px;
   text-align: center;
+  color: white;
+  text-shadow: 0 2px 8px rgba(235, 97, 91, 0.2);
 }
 
 .project-card h6 {
   font-size: 14px;
   margin-top: 15px;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.project-card:hover h6 {
+  color: var(--primary-light);
 }
 
 .contact-section {
-  background: black;
+  background: var(--dark-bg);
   overflow: hidden;
   flex-direction: column;
 }
@@ -309,10 +491,17 @@ nav a:hover {
 
 .contact-section h2 {
   opacity: 90%;
+  font-size: 32px;
+  font-weight: 600;
+  animation: fadeInDown 1s ease-out;
 }
 
 .contact-cards {
   margin-top: 18px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contact-section {
@@ -320,25 +509,82 @@ nav a:hover {
 }
 
 .contact-details {
-  padding: 27px 90px;
-  border: 1px solid var(--primary-color);
-  border-radius: 9px;
+  padding: 28px 90px;
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
   margin-bottom: 24px;
-  opacity: 90%;
+  opacity: 85%;
+  background: linear-gradient(135deg, var(--accent-glow), transparent);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-details::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent-glow),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.contact-details:hover {
+  opacity: 100%;
+  box-shadow: 0 12px 40px rgba(235, 97, 91, 0.25);
+  transform: translateY(-8px);
+  border-color: var(--primary-light);
+}
+
+.contact-details:hover::before {
+  left: 100%;
 }
 
 .contact-details a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--primary-light);
   font-weight: bold;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-details a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--primary-light),
+    var(--primary-color)
+  );
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
 }
 
 .contact-details a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.contact-details a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .contact-details h6 {
   margin-top: 15px;
+  color: var(--text-secondary);
 }
 
 .contact-section footer {
@@ -350,6 +596,11 @@ nav a:hover {
   font-size: 12px;
   display: block;
   text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.contact-section footer:hover {
+  opacity: 85%;
 }
 
 #hobbies-title {
@@ -369,7 +620,8 @@ nav a:hover {
   width: 130px;
   position: absolute;
   left: -10px;
-  top: 45px;
+  top: 65px;
+  animation: float 3s ease-in-out infinite;
 }
 
 #bot-right {
@@ -377,34 +629,116 @@ nav a:hover {
   position: absolute;
   bottom: 0px;
   right: 0px;
+  animation: float 3.5s ease-in-out infinite;
 }
 
 #top-left,
 #bot-right {
   opacity: 90%;
+  filter: drop-shadow(0 0 10px rgba(235, 97, 91, 0.2));
 }
 
 #profile-image {
   width: 180px;
-  /* border-radius: 50%; */
   border-radius: 75% 25% 75% 25%;
-  opacity: 75%;
-  background: #ae303083;
+  opacity: 80%;
+  background: linear-gradient(
+    135deg,
+    rgba(174, 48, 48, 0.5),
+    rgba(235, 97, 91, 0.2)
+  );
   position: relative;
   left: -15px;
+  transition: all 0.5s ease;
+  animation: fadeInRight 1s ease-out;
+  box-shadow: 0 10px 40px rgba(235, 97, 91, 0.2);
+}
+
+#profile-image:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 15px 50px rgba(235, 97, 91, 0.35);
 }
 
 #name {
-  color: var(--primary-color);
+  color: var(--primary-light);
   font-weight: bold;
+  position: relative;
+}
+
+#name::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--primary-light)
+  );
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+}
+
+#name:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 #hobbies-img {
   padding: 3px;
-  border: 1px solid white;
+  border: 2px solid var(--primary-color);
   opacity: 80%;
   width: 95%;
-  border-radius: 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(235, 97, 91, 0.1);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 @media (max-width: 991px) {
@@ -418,7 +752,7 @@ nav a:hover {
   }
 
   .hobbies-first-col {
-    border-left: 1px solid var(--primary-color);
+    border-left: 2px solid var(--primary-color);
   }
 
   .hobbies-section p {
@@ -432,6 +766,7 @@ nav a:hover {
 
   .journey-btns {
     margin-left: 40px;
+    flex-wrap: wrap;
   }
 
   .projects-rows h5 {
@@ -441,7 +776,7 @@ nav a:hover {
 
   .projects-rows .journey-btn {
     font-size: 10px;
-    padding: 9px;
+    padding: 9px 12px;
   }
 
   .project-card h6 {
@@ -468,6 +803,23 @@ nav a:hover {
   #hobbies-img {
     display: none;
   }
+
+  .home-section h2 {
+    font-size: 60px;
+  }
+
+  .about-section h2 {
+    font-size: 28px;
+  }
+
+  .volunteer-section {
+    margin: 20px;
+    padding: 16px;
+  }
+
+  .contact-details {
+    padding: 24px 70px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -475,6 +827,7 @@ nav a:hover {
     margin: 12px !important;
     padding: 12px !important;
     font-size: 12px !important;
+    transition: all 0.25s ease !important;
   }
 
   nav ul {
@@ -482,7 +835,7 @@ nav a:hover {
   }
 
   .home-section h2 {
-    font-size: 54px;
+    font-size: 48px;
   }
 
   .home-section h5 {
@@ -493,6 +846,10 @@ nav a:hover {
     font-size: 13px;
     margin-right: 6px;
     padding: 12px 14px;
+  }
+
+  .homepage-nav-links {
+    gap: 10px;
   }
 
   .about-section h2 {
@@ -509,10 +866,12 @@ nav a:hover {
 
   .journey-btns {
     margin-left: 20px;
+    flex-wrap: wrap;
   }
 
   .journey-intro p {
     font-size: 13px;
+    padding: 12px 12px;
   }
 
   .journey-section li {
@@ -525,17 +884,18 @@ nav a:hover {
   }
 
   .info-para {
-    padding: 4px;
+    padding: 8px;
     margin-left: 18px;
   }
 
   .journey-btn {
     font-size: 12px;
-    padding: 12px;
+    padding: 11px 14px;
   }
 
   .volunteer-section {
-    margin: 12px;
+    margin: 15px;
+    padding: 14px;
   }
 
   .projects-section h2 {
@@ -551,7 +911,7 @@ nav a:hover {
   }
 
   .contact-details {
-    padding: 20px 60px;
+    padding: 20px 50px;
   }
 
   .contact-details h5 {
@@ -574,6 +934,10 @@ nav a:hover {
   #bot-right {
     width: 100px;
   }
+
+  .hobbies-section {
+    margin-left: 8px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -585,6 +949,7 @@ nav a:hover {
     margin: 6px !important;
     padding: 6px !important;
     font-size: 9px !important;
+    transition: all 0.25s ease !important;
   }
 
   nav ul {
@@ -609,11 +974,15 @@ nav a:hover {
     border-left: 2px var(--primary-color) solid;
     font-size: 9px;
     margin-right: 2px;
-    padding: 8px;
+    padding: 8px 10px;
   }
 
   .home-section a:hover {
     border-left: 2px var(--primary-color) solid;
+  }
+
+  .homepage-nav-links {
+    gap: 6px;
   }
 
   .info-section {
@@ -635,11 +1004,12 @@ nav a:hover {
 
   .journey-intro p {
     font-size: 11px;
-    padding-left: 9px;
+    padding: 8px 9px;
   }
 
   .journey-section li {
     font-size: 13px;
+    padding: 14px 8px;
   }
 
   .info-para p {
@@ -647,17 +1017,19 @@ nav a:hover {
   }
 
   .info-para {
-    padding: 2px;
+    padding: 6px;
     margin-left: 12px;
   }
 
   .journey-btns {
     margin-left: 9px;
+    flex-wrap: wrap;
+    gap: 8px;
   }
 
   .journey-btn {
     font-size: 11px;
-    padding: 11px;
+    padding: 10px 12px;
   }
 
   .hobbies-section {
@@ -676,7 +1048,12 @@ nav a:hover {
 
   .volunteer-section p {
     border-left: none;
-    padding-left: 0;
+    padding-left: 8px;
+  }
+
+  .volunteer-section {
+    margin: 10px;
+    padding: 12px;
   }
 
   .projects-section h2 {
@@ -689,6 +1066,7 @@ nav a:hover {
 
   .projects-rows .journey-btn {
     font-size: 9px;
+    padding: 9px 10px;
   }
 
   .project-card h6 {
@@ -698,6 +1076,7 @@ nav a:hover {
 
   .projects-section p {
     font-size: 9px;
+    padding: 8px 8px;
   }
 
   .projects-rows {
@@ -710,10 +1089,11 @@ nav a:hover {
 
   .contact-section h2 {
     margin-bottom: 27px;
+    font-size: 24px;
   }
 
   .contact-details {
-    padding: 18px 45px;
+    padding: 16px 40px;
   }
 
   .contact-details h5 {
@@ -765,7 +1145,7 @@ nav a:hover {
 
   .home-section a {
     font-size: 8px;
-    padding: 7px;
+    padding: 6px 8px;
   }
 
   .about-section h2 {
@@ -774,11 +1154,12 @@ nav a:hover {
 
   .journey-intro p {
     font-size: 9px;
-    padding-left: 5px;
+    padding: 6px 5px;
   }
 
   .journey-section li {
     font-size: 11px;
+    padding: 10px 6px;
   }
 
   .info-para p {
@@ -786,16 +1167,17 @@ nav a:hover {
   }
 
   .info-para {
-    padding: 0;
+    padding: 4px;
   }
 
   .journey-btns {
     margin-left: 5px;
+    gap: 5px;
   }
 
   .journey-btn {
     font-size: 9px;
-    padding: 9px;
+    padding: 8px 10px;
   }
 
   .hobbies-section p,
@@ -806,6 +1188,11 @@ nav a:hover {
   .hobbies-section h6,
   .volunteer-section h6 {
     font-size: 11px;
+  }
+
+  .volunteer-section {
+    margin: 8px;
+    padding: 10px;
   }
 
   .projects-section h2 {
@@ -823,6 +1210,7 @@ nav a:hover {
 
   .projects-rows .journey-btn {
     font-size: 8px;
+    padding: 7px 8px;
   }
 
   .project-card h6 {
@@ -832,14 +1220,16 @@ nav a:hover {
   .projects-section p {
     font-size: 7px;
     margin: 5px 0 10px !important;
+    padding: 6px 6px;
   }
 
   .contact-section h2 {
     margin-bottom: 20px;
+    font-size: 18px;
   }
 
   .contact-details {
-    padding: 18px 36px;
+    padding: 14px 30px;
   }
 
   .contact-details h5 {
