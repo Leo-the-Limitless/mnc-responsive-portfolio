@@ -3,7 +3,7 @@
   --primary-light: #ff7a6e;
   --dark-bg: #0a0a0a;
   --text-primary: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-secondary: rgba(255, 255, 255, 0.903);
   --accent-glow: rgba(235, 97, 91, 0.15);
 }
 
@@ -48,7 +48,7 @@ nav a {
   border: 0 !important;
   margin: 27px !important;
   padding: 27px !important;
-  opacity: 70% !important;
+  opacity: 80% !important;
   color: white;
   text-decoration: none;
   font-size: 14px !important;
@@ -81,21 +81,21 @@ nav a:hover {
   position: absolute;
   bottom: 9px;
   font-size: 12px;
-  opacity: 45%;
+  opacity: 65%;
   display: block;
   text-align: center;
   transition: opacity 0.3s ease;
 }
 
 .home-section footer:hover {
-  opacity: 65%;
+  opacity: 85%;
 }
 
 .about-section footer,
 .projects-section footer {
   padding: 9px 0;
   font-size: 12px;
-  opacity: 45%;
+  opacity: 65%;
   display: block;
   text-align: center;
   transition: opacity 0.3s ease;
@@ -103,7 +103,7 @@ nav a:hover {
 
 .about-section footer:hover,
 .projects-section footer:hover {
-  opacity: 65%;
+  opacity: 85%;
 }
 
 .home-section {
@@ -116,7 +116,7 @@ nav a:hover {
 
 .home-section h2 {
   font-size: 72px;
-  opacity: 80%;
+  opacity: 95%;
   line-height: 1.5;
   font-weight: 600;
   letter-spacing: -1px;
@@ -133,7 +133,7 @@ nav a:hover {
 
 .home-section h5 {
   font-size: 16px;
-  opacity: 75%;
+  opacity: 85%;
   font-weight: 300;
   letter-spacing: 0.5px;
   line-height: 1.6;
@@ -159,7 +159,7 @@ nav a:hover {
   text-decoration: none;
   color: white;
   font-size: 14px;
-  opacity: 70%;
+  opacity: 85%;
   transition: all 0.25s ease;
   position: relative;
   border-radius: 4px;
@@ -167,7 +167,7 @@ nav a:hover {
 
 .home-section a:hover {
   border: 3px var(--primary-color) solid;
-  opacity: 90%;
+  opacity: 95%;
   box-shadow: 0 6px 20px rgba(235, 97, 91, 0.25);
   transform: translateY(-2px);
 }
@@ -220,17 +220,17 @@ nav a:hover {
   margin-top: 20px;
   font-size: 18px;
   font-weight: 600;
-  opacity: 90%;
+  opacity: 95%;
   padding: 16px 0 16px 24px;
   border-left: 4px solid var(--primary-color);
   position: relative;
-  color: var(--primary-light);
+  color: var(--text-primary);
 }
 
 .journey-section p {
   font-size: 13px;
   padding-left: 10px;
-  opacity: 90%;
+  opacity: 95%;
   line-height: 2;
 }
 
@@ -256,7 +256,7 @@ nav a:hover {
   margin-bottom: 24px;
   border-left: 3px solid var(--primary-color);
   border-radius: 6px;
-  opacity: 90%;
+  opacity: 95%;
   background: linear-gradient(135deg, var(--accent-glow), transparent);
   transition: all 0.35s ease;
   box-shadow: 0 2px 8px rgba(235, 97, 91, 0.1);
@@ -271,7 +271,7 @@ nav a:hover {
 .hobbies-section h6,
 .volunteer-section h6 {
   font-size: 15px;
-  opacity: 90%;
+  opacity: 95%;
   color: var(--primary-color);
   font-weight: 600;
 }
@@ -280,7 +280,7 @@ nav a:hover {
   line-height: 1.8;
   font-size: 13px;
   margin-bottom: 18px;
-  opacity: 90%;
+  opacity: 95%;
 }
 
 .volunteer-section {
@@ -304,7 +304,7 @@ nav a:hover {
   padding-left: 12px;
   line-height: 1.8;
   font-size: 13px;
-  opacity: 90%;
+  opacity: 95%;
 }
 
 .journey-section a {
@@ -349,11 +349,11 @@ nav a:hover {
 .journey-btn {
   font-size: 13px;
   font-weight: bold;
-  opacity: 90%;
+  opacity: 95%;
   padding: 13px 18px;
   border-radius: 6px;
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--text-primary);
   border: 2px solid var(--primary-color);
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   background: transparent;
@@ -391,7 +391,7 @@ nav a:hover {
 .projects-rows {
   max-width: 75%;
   margin: 0 auto;
-  opacity: 90%;
+  opacity: 95%;
 }
 
 .projects-rows a {
@@ -442,7 +442,7 @@ nav a:hover {
 }
 
 .project-image {
-  opacity: 85%;
+  opacity: 95%;
   padding: 5px;
   display: block;
   margin: 0 auto;
@@ -475,10 +475,6 @@ nav a:hover {
   transition: color 0.3s ease;
 }
 
-.project-card:hover h6 {
-  color: var(--primary-light);
-}
-
 .contact-section {
   background: var(--dark-bg);
   overflow: hidden;
@@ -490,7 +486,7 @@ nav a:hover {
 }
 
 .contact-section h2 {
-  opacity: 90%;
+  opacity: 95%;
   font-size: 32px;
   font-weight: 600;
   animation: fadeInDown 1s ease-out;
@@ -592,7 +588,7 @@ nav a:hover {
   bottom: 9px;
   left: 0;
   right: 0;
-  opacity: 70%;
+  opacity: 65%;
   font-size: 12px;
   display: block;
   text-align: center;
@@ -634,7 +630,7 @@ nav a:hover {
 
 #top-left,
 #bot-right {
-  opacity: 90%;
+  opacity: 95%;
   filter: drop-shadow(0 0 10px rgba(235, 97, 91, 0.2));
 }
 
