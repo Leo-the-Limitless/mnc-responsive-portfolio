@@ -1,78 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/77026b15eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <meta
+      name="description"
+      content="May Nyein Chan is an aspiring software developer from Yangon, Myanmar. In this portfolio project, you can see May's projects, learning journey, hobbies, and contact details."
+    />
+    <title>Homepage | May Nyein Chan</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/77026b15eb.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="src/styles.css">
-  <meta name="description"
-    content="May Nyein Chan is an aspiring software developer from Yangon, Myanmar. In this portfolio project, you can see May's projects, learning journey, hobbies, and contact details.">
-  <title> Homepage | May Nyein Chan</title>
-</head>
-
-<body>
-  <div class="home-section vh-100">
-    <nav>
-      <ul class="d-flex">
-        <li>
-          <a class="active" href="/">Home <i class="fa-solid fa-house ms-1"></i></a>
-        </li>
-        <li>
-          <a href="/projects.html">Projects <i class="fa-solid fa-shield-cat ms-1"></i></a>
-        </li>
-        <li>
-          <a href="/about.html">About <i class="fa-regular fa-address-card ms-1"></i></a>
-        </li>
-        <li>
-          <a href="/contact.html">Contact <i class="fa-solid fa-paper-plane ms-1"></i></a>
-        </li>
-      </ul>
-    </nav>
-    <img src="images/corner-top-left-svgrepo-com.svg" alt="top-left-corner-img" id="top-left">
-    <div class="d-flex justify-content-center align-items-center" style="height: 96vh;">
-      <div>
-        <h2>
-          Hi, I'm May.
-        </h2>
-        <div class="info-section">
-          <h5>
-            <span id="name">May Nyein Chan</span>. A 21-year-old
-          </h5>
-          <h5>
-            aspiring software developer.
-          </h5>
-          <!-- <h5>
+  <body>
+    <div class="home-section vh-100">
+      <nav>
+        <ul class="d-flex">
+          <li>
+            <a class="active" href="/"
+              >Home <i class="fa-solid fa-house ms-1"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/projects.html"
+              >Projects <i class="fa-solid fa-shield-cat ms-1"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/about.html"
+              >About <i class="fa-regular fa-address-card ms-1"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/contact.html"
+              >Contact <i class="fa-solid fa-paper-plane ms-1"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <img
+        src="images/corner-top-left-svgrepo-com.svg"
+        alt="top-left-corner-img"
+        id="top-left"
+      />
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="height: 96vh"
+      >
+        <div>
+          <h2>Hi, I'm May.</h2>
+          <div class="info-section">
+            <h5><span id="name">May Nyein Chan</span>. A 21-year-old</h5>
+            <h5>aspiring software engineer.</h5>
+            <!-- <h5>
             from Yangon, Myanmar
           </h5> -->
-          <h5>
-            Currently studying Software Engineering
-          </h5>
-          <h5>
-            at KMITL, Bangkok, Thailand.
-          </h5>
+            <h5>Currently studying Software Engineering</h5>
+            <h5>at KMITL, Bangkok, Thailand.</h5>
+          </div>
+          <div class="homepage-nav-links">
+            <a href="/projects.html">My Projects</a>
+            <a href="/about.html">About Me</a>
+            <a href="/contact.html">Contact Me</a>
+          </div>
         </div>
-        <div class="homepage-nav-links">
-          <a href="/projects.html">My Projects</a>
-          <a href="/about.html">About Me</a>
-          <a href="/contact.html">Contact Me</a>
-        </div>
+        <img
+          src="images/portfolio-pf.png"
+          alt="profile-image"
+          id="profile-image"
+        />
+        <footer>
+          <i class="fa-regular fa-copyright"></i> May Nyein Chan - 2025
+        </footer>
       </div>
-      <img src="images/portfolio-pf.png" alt="profile-image" id="profile-image">
-      <footer>
-        <i class="fa-regular fa-copyright"></i> May Nyein Chan - 2025
-      </footer>
+      <img
+        src="images/corner-bottom-right-svgrepo-com.svg"
+        alt="bot-right-corner-img"
+        id="bot-right"
+      />
     </div>
-    <img src="images/corner-bottom-right-svgrepo-com.svg" alt="bot-right-corner-img" id="bot-right">
-  </div>
-</body>
-
+  </body>
 </html>
