@@ -864,7 +864,7 @@ nav a:hover {
   nav a {
     margin: 12px !important;
     padding: 12px !important;
-    font-size: 12px !important;
+    font-size: 13px !important;
     transition: all 0.25s ease !important;
   }
 
@@ -873,15 +873,15 @@ nav a:hover {
   }
 
   .home-section h2 {
-    font-size: 49px;
+    font-size: 52px;
   }
 
   .home-section h5 {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .home-section a {
-    font-size: 14px;
+    font-size: 15px;
     margin-right: 6px;
     padding: 12px 14px;
   }
@@ -908,7 +908,7 @@ nav a:hover {
   }
 
   .journey-box ul {
-    padding-left: 10px;
+    padding-left: 5px;
   }
 
   .journey-btns {
@@ -989,13 +989,13 @@ nav a:hover {
 
 @media (max-width: 480px) {
   .home-section footer {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   nav a {
     margin: 6px !important;
     padding: 6px !important;
-    font-size: 10px !important;
+    font-size: 11px !important;
     transition: all 0.25s ease !important;
   }
 
@@ -1019,7 +1019,7 @@ nav a:hover {
 
   .home-section a {
     border-left: 2px var(--primary-color) solid;
-    font-size: 10px;
+    font-size: 11px;
     margin-right: 2px;
     padding: 8px 10px;
   }
@@ -1054,9 +1054,14 @@ nav a:hover {
     padding-left: 0;
   }
 
+  .journey-box {
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
   .journey-intro p {
     font-size: 13px;
-    padding: 6px 7px;
+    padding: 6px 6px;
   }
 
   .journey-section li {
@@ -1090,13 +1095,13 @@ nav a:hover {
 
   .hobbies-section p,
   .volunteer-section p {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .hobbies-section h6,
   .hobbies-section h6,
   .volunteer-section h6 {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .volunteer-section p {
@@ -1129,7 +1134,7 @@ nav a:hover {
 
   .projects-section p {
     font-size: 11px;
-    padding: 6px 6px;
+    padding: 5px 5px;
   }
 
   .projects-rows {
@@ -1137,7 +1142,7 @@ nav a:hover {
   }
 
   .project-image {
-    padding: 2px;
+    padding: 1px;
   }
 
   .contact-section h2 {
@@ -1180,7 +1185,7 @@ nav a:hover {
   nav a {
     margin: 5px !important;
     padding: 4px !important;
-    font-size: 8px !important;
+    font-size: 9px !important;
   }
 
   .about-section footer,
@@ -1190,15 +1195,15 @@ nav a:hover {
   }
 
   .home-section h2 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .home-section h5 {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .home-section a {
-    font-size: 9px;
+    font-size: 10px;
     padding: 6px 8px;
   }
 
@@ -1241,12 +1246,12 @@ nav a:hover {
 
   .hobbies-section p,
   .volunteer-section p {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .hobbies-section h6,
   .volunteer-section h6 {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .volunteer-section {
@@ -1279,7 +1284,7 @@ nav a:hover {
   .projects-section p {
     font-size: 9px;
     margin: 5px 0 10px !important;
-    padding: 4px 4px;
+    padding: 4px 3px;
   }
 
   .contact-section h2 {
